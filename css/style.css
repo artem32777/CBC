@@ -919,7 +919,7 @@ body::-webkit-scrollbar-thumb {
 
 .comments__submit {
   float: right;
-  background-color: #3578e3;
+  background-color: #1463e2;
   padding: 0.3125rem 0.625rem;
   font-size: 0.875rem;
   font-weight: 600;
@@ -1035,7 +1035,7 @@ body::-webkit-scrollbar-thumb {
 
 .comments__showmore {
   margin-top: 1.25rem;
-  background-color: #3578e3;
+  background-color: #1463e2;
   width: 100%;
   max-width: 18.75rem;
   -ms-flex-item-align: center;
