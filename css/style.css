@@ -641,14 +641,11 @@ body::-webkit-scrollbar-thumb {
 
 .article__list li {
   font-weight: 700;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  gap: 0.625rem;
 }
 
 .article__list li::before {
   content: "●";
+  padding-right: 0.625rem;
   -webkit-transform: translate(0px, 3px);
       -ms-transform: translate(0px, 3px);
           transform: translate(0px, 3px);
@@ -678,6 +675,18 @@ body::-webkit-scrollbar-thumb {
   border-top: 1px solid #cbcbcb;
   padding-top: 1rem;
   margin-bottom: 3.125rem;
+}
+
+@supports (margin-bottom: clamp( 0.9375rem , 0.1420454545rem  +  3.9772727273vw , 3.125rem )) {
+  .article__source {
+    margin-bottom: clamp( 0.9375rem , 0.1420454545rem  +  3.9772727273vw , 3.125rem );
+  }
+}
+
+@supports not (margin-bottom: clamp( 0.9375rem , 0.1420454545rem  +  3.9772727273vw , 3.125rem )) {
+  .article__source {
+    margin-bottom: calc(0.9375rem + 2.1875 * (100vw - 20rem) / 55);
+  }
 }
 
 .article__links {
