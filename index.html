@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="UTF-8">
+	<title>Главная</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="format-detection" content="telephone=no">
+	<style>
+		body {
+			opacity: 0;
+		}
+	</style>
+	<link rel="stylesheet" href="css/style.min.css?_v=20230519013834">
+	<link rel="shortcut icon" href="img/favicon.png">
+	<meta name="theme-color" content="#e60505">
+	<meta name="description" content="Описание страницы сайта.">
+	<meta name="keywords" content="Ключевые слова (10 шт)">
+</head>
+
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<nav class="header-top">
+				<a href="index.html" class="header-top__logo" title="Logo">
+					<svg width="71" height="18">
+						<path d="M12.265 8.957a3.19 3.19 0 1 1-6.38 0 3.19 3.19 0 0 1 6.38 0M5.393 12.147a3.19 3.19 0 1 1 0-6.381v6.381M12.76 15.666V12.64l3.029.002a3.026 3.026 0 0 1-3.03 3.025M5.393 2.245v3.03H2.36a3.032 3.032 0 0 1 3.032-3.03M5.393 15.668V12.64l-3.032.002a3.029 3.029 0 0 0 3.032 3.027M16.446 11.699l-.002-5.483a3.19 3.19 0 0 1 .002 5.482M6.335 1.589h5.482A3.184 3.184 0 0 0 9.077.032 3.188 3.188 0 0 0 6.335 1.59M11.777 16.326l-5.483-.001a3.188 3.188 0 0 0 5.483 0M12.266 12.64a3.19 3.19 0 0 1-6.381 0h6.38M12.76 12.147a3.19 3.19 0 1 0 0-6.381v6.381M12.266 5.28a3.19 3.19 0 0 0-6.381 0h6.38M1.708 11.699l.001-5.483a3.188 3.188 0 0 0-.001 5.482M15.789 5.277l-3.029-.002V2.247a3.03 3.03 0 0 1 3.029 3.03" fill="#D8232A" />
+						<path d="M29.973 17.88c-5.08 0-8.853-3.922-8.853-8.878v-.05c0-4.907 3.699-8.926 9-8.926 3.255 0 5.203 1.085 6.806 2.663L34.51 5.475c-1.332-1.208-2.688-1.947-4.414-1.947-2.91 0-5.006 2.416-5.006 5.375v.05c0 2.959 2.047 5.425 5.006 5.425 1.972 0 3.18-.79 4.537-2.023l2.417 2.442c-1.776 1.898-3.749 3.082-7.077 3.082M49.592 12.447c0-1.2-.892-1.939-2.907-1.939h-4.54v3.928h4.667c1.735 0 2.78-.612 2.78-1.938v-.051zm-.994-7.142c0-1.173-.918-1.836-2.576-1.836h-3.877v3.775h3.622c1.734 0 2.83-.561 2.83-1.888v-.05zM46.812 17.88H38.32V.026h8.29c3.647 0 5.891 1.81 5.891 4.616v.051c0 2.015-1.071 3.137-2.346 3.851 2.065.791 3.34 1.99 3.34 4.387v.051c0 3.265-2.652 4.897-6.682 4.897zM63.44 17.88c-5.08 0-8.853-3.922-8.853-8.878v-.05c0-4.907 3.699-8.926 9-8.926 3.255 0 5.203 1.085 6.806 2.663l-2.416 2.786c-1.332-1.208-2.688-1.947-4.414-1.947-2.91 0-5.006 2.416-5.006 5.375v.05c0 2.959 2.047 5.425 5.006 5.425 1.972 0 3.18-.79 4.537-2.023l2.417 2.442c-1.776 1.898-3.749 3.082-7.078 3.082" fill="#1A1919" />
+					</svg>
+				</a>
+				<div class="header-top__menu">
+					<button class="header-top__menu-btn arrow" type="button">menu</button>
+					<div hidden class="header-top__menu-content"></div>
+				</div>
+				<div class="header-top__actions">
+					<div class="header-top__search">
+						<button class="header-top__search-btn" type="button">
+							<svg width="15" height="15" viewBox="0 0 165 162">
+								<path d="M158.882 135.383 118.69 95.444c5.737-9.308 9.216-20.155 9.216-31.883C127.906 29.57 100.156 2 65.953 2 31.745 2 4 29.57 4 63.561c0 33.987 27.745 61.562 61.953 61.562 11.803 0 22.718-3.457 32.086-9.138l40.192 39.918c2.824 2.806 7.503 2.786 10.326 0l10.325-10.26c2.824-2.805 2.824-7.455 0-10.26zm-92.929-30.78c-22.809 0-41.302-18.377-41.302-41.042 0-22.664 18.493-41.04 41.302-41.04s41.302 18.376 41.302 41.04c0 22.665-18.493 41.041-41.302 41.041z" />
+							</svg>
+							<span>Search</span>
+						</button>
+						<div hidden class="header-top__search-panel"></div>
+					</div>
+					<button class="header-top__auth" type="button">
+						<svg width="15" height="15" viewBox="0 0 24 24">
+							<g xmlns="http://www.w3.org/2000/svg" transform="translate(6)">
+								<path d="M-3.2 22.9c-.7 0-1.2-.7-.9-1.3.7-2.2 3.1-6.3 10.1-6.3s9.4 4.1 10.2 6.3c.2.7-.2 1.3-.9 1.3H-3.2z" />
+								<ellipse cx="6" cy="7" rx="5.8" ry="5.9" />
+							</g>
+						</svg>
+						<span>Sign In</span>
+					</button>
+				</div>
+			</nav>
+
+			<nav class="header-bottom">
+				<a href="#" class="header-bottom__news">news</a>
+				<ul class="header-bottom__menu">
+					<li><a href="#">Top Stories</a></li>
+					<li><a href="#">Local</a></li>
+					<li><a href="#">Climate</a></li>
+					<li><a href="#">World</a></li>
+					<li><a href="#">Canada</a></li>
+					<li><a href="#">Politics</a></li>
+					<li><a href="#">Indigenous</a></li>
+					<li><a href="#">Opinion</a></li>
+					<li><a href="#">The National</a></li>
+				</ul>
+				<div class="header-bottom__more">
+					<button class="header-bottom__more-btn arrow" type="button"><span>More</span><span hidden>Sections</span></button>
+					<ul hidden class="header-bottom__more-content"></ul>
+				</div>
+			</nav>
+		</header>
+		<main class="main">
+			<article class="article">
+				<a href="#" class="article__category">Politics</a>
+				<h1 class="article__title">Federal government proposes stricter bail system in new bill</h1>
+				<ul class="article__socials">
+					<li><a href="#"><img src="img/socials/facebook.svg" alt="facebook"></a></li>
+					<li><a href="#"><img src="img/socials/twitter.svg" alt="twitter"></a></li>
+					<li><a href="#"><img src="img/socials/mail.svg" alt="mail"></a></li>
+					<li><a href="#"><img src="img/socials/reddit.svg" alt="reddit"></a></li>
+					<li><a href="#"><img src="img/socials/linkedin.svg" alt="linkedin"></a></li>
+				</ul>
+				<h2 class="article__label">Proposed law would make it harder for those accused of certain crimes to get released on bail</h2>
+				<div class="article__info">
+					<a href="#" class="article__author link">Richard Raycraft</a>
+					<div class="article__channel">CBC News</div>
+					<div class="article__date">Posted:<span>May 16, 2023 12:36 PM EDT</span></div>
+					<div class="article__updated">Last Updated: <span>9 hours ago</span></div>
+				</div>
+				<picture><source srcset="img/transport.webp" type="image/webp"><img src="img/transport.jpg" class="article__img" alt="Illustration"></picture>
+				<p class="article__img-desc">David Lametti, Minister of Justice and Attorney General of Canada, makes an announcement regarding bail reform in Ottawa on Tuesday, May 16, 2023. Lametti introduced legislation Tuesday which would make bail harder to get for those accused of certain types of offences. (Sean Kilpatrick/The Canadian Press)</p>
+				<div class="article__text">
+					<p>The federal government is proposing changes to the country's bail system that would make it harder for those accused of certain offences to be released on bail</p>
+					<p>Bill C-48 would amend the Criminal Code so that those charged with a serious violent offence involving a weapon — one with a maximum penalty of ten years' imprisonment — who were convicted of a similar offence within the last five years will face a reverse onus to get bail.</p>
+					<p>"Reverse onus" means the accused would have to show why they should be released instead of the prosecution having to prove that they should remain behind bars.</p>
+					<p>The proposed law would also expand the use of reverse onus for firearm and intimate partner violence offences, and allow courts to take into consideration community safety and an accused's history of violence when making a bail decision.</p>
+					<p>"The goal of Bill C-48 is improving public safety," Justice Minister David Lametti told a news conference Tuesday.</p>
+					<p>"At the same time, we want to make sure that these law reforms do not make things worse for Indigenous people, Black people and other vulnerable groups who we know are overrepresented in the criminal justice system … I know this is a priority that my provincial and territorial counterparts share."</p>
+				</div>
+				<picture><source srcset="img/transport3.webp" type="image/webp"><img src="img/transport3.jpg" class="article__img" alt="Illustration"></picture>
+				<p class="article__img-desc">The government has proposed new legislation it says will make it harder for violent, repeat offenders to be granted bail, but without making life harder for vulnerable groups.</p>
+				<div class="article__text">
+					<p>Lametti introduced the legislation in the House of Commons Tuesday morning.</p>
+					<p>The bill is the federal government's response to
+						<a href="#" class="link">chiefs of police, premiers and Conservative MPs</a>
+						pushing for stricter bail laws.
+					</p>
+					<p>Lametti said the proposed changes are the result of consultations earlier this year with the premiers, law enforcement and other stakeholders.</p>
+					<p>Canada's bail system came under heavy scrutiny after Const. Grzegorz (Greg) Pierzchala of the Ontario Provincial Police
+						<a href="#" class="link">was killed late last year.</a>
+						Randall McKenzie, one of the two suspects in the murder, was out on bail for assault and weapons charges, and also had a warrant out for his arrest. A rising tide of violent crime has also put a spotlight on Canada's criminal justice system.
+					</p>
+				</div>
+				<picture><source srcset="img/transport.webp" type="image/webp"><img src="img/transport.jpg" class="article__img" alt="Illustration"></picture>
+				<p class="article__img-desc">OPP Const. Grzegorz Pierzchala of the Haldimand County detachment is pictured in a photo shared by Six Nations of the Grand River. Pierzchala's murder in December 2022 brought new scrutiny to Canada's bail system. (OPP West Region)</p>
+				<div class="article__text">
+					<p>Public Safety Minister Marco Mendicino said the bail system needs changes.</p>
+					<p>"We must strengthen our bail system to keep communities safer," he told the news conference.</p>
+					<p>"For workers riding a bus or a subway, for parents who send their kids to school, for families who are going for a walk in their own neighbourhood, this legislation is about them and indeed all Canadians so that we can keep them safe."</p>
+					<p>The government passed a previous bail reform bill, Bill C-75, in 2019. The bill said that judges should give particular consideration when deciding on bail "to the circumstances of aboriginal accused" and "accused who belong to a vulnerable population that is overrepresented in the criminal justice system."</p>
+				</div>
+				<ul class="article__list">
+					<li><a href="#"><span class="article__link-label red-color">CBC EXPLAINS</span><span class="link">How does Canada's bail system actually work? And where does it fall short?</span></a></li>
+					<li><a href="#"><span class="link">Liberal government promises to tighten bail access as crime surges</span></a></li>
+				</ul>
+				<div class="article__text">
+					<p>Lametti said he hopes the new requirement that courts consider community safety and an accused's past violence will crack down on crime.</p>
+					<p>"What we're doing is signalling to courts, we're signalling to Crown prosecutors that a person should not be out on bail if they have a history of violence," Lametti said. </p>
+					<p>In 2020-21, Indigenous offenders made up 27 per cent of the total offender population, according to the annual Corrections and Conditional Release Report from Public Safety Canada. The 2021 Census
+						<a href="#" class="link">reported that Indigenous people account for five per cent of Canada's population</a>.
+					</p>
+					<p>The bill would put in place a reverse onus for the offences of unlawful possession of a loaded (or easily loaded) prohibited or restricted firearm, breaking and entering to steal a firearm, robbery to steal a firearm and making an automatic firearm.</p>
+					<p>The previous bill, C-75, put in place a reverse onus for those previously convicted of an offence involving intimate partner violence. C-48 would expand the reverse onus to include those who have been discharged on charges of intimate partner violence.</p>
+				</div>
+				<ul class="article__list">
+					<li><a href="#" class="link">Police chiefs, premiers push federal government for bail reform to target repeat violent offenders</a></li>
+					<li><a href="#"><span class="article__link-label red-color">UPDATED</span><span class="link">Public safety minister announces $390M for provinces to help fight gangs, gun crime</span></a></li>
+				</ul>
+				<div class="article__text">
+					<p>Lametti said he hopes all parties and legislators support the legislation.</p>
+					<p>"It's important to see this bill make its way through Parliament quickly. I firmly hope this bill will receive unanimous consent," he said.</p>
+					<p>"Canadians expect us to act, and I trust my friends in the House and the Senate view things in exactly the same way."</p>
+					<p>The Charter of Rights and Freedoms guarantees that anyone who is charged with a crime will not be denied reasonable bail without just cause.</p>
+					<p>Lametti said he's confident the proposed changes comply with the charter.</p>
+				</div>
+				<h3 class="article__subtitle">Poilievre blasts bail bill</h3>
+				<div class="article__text">
+					<p>Lametti said he hopes all parties and legislators support the legislation.</p>
+					<p>"It's important to see this bill make its way through Parliament quickly. I firmly hope this bill will receive unanimous consent," he said.</p>
+					<p>"Canadians expect us to act, and I trust my friends in the House and the Senate view things in exactly the same way."</p>
+					<p>The Charter of Rights and Freedoms guarantees that anyone who is charged with a crime will not be denied reasonable bail without just cause.</p>
+					<p>Lametti said he's confident the proposed changes comply with the charter.</p>
+				</div>
+				<picture><source srcset="img/transport.webp" type="image/webp"><img src="img/transport.jpg" class="article__img" alt="Illustration"></picture>
+				<p class="article__img-desc">Conservative Leader Pierre Poilievre speaks to reporters in the House of Commons on Parliament Hill in Ottawa, on Tuesday, March 28, 2023. Poilievre said Tuesday he wants to see bail changes that would guarantee repeat violent criminals are not granted bail. (Justin Tang/Canadian Press)</p>
+				<div class="article__text">
+					<p>Conservative public safety critic Raquel Dancho did not answer a question about whether a Conservative government would reverse the provision that courts have to take into consideration Indigenous background when deciding on bail.</p>
+					<p>But Poilievre said the release of violent criminals has a disproportionate impact on Indigenous communities.</p>
+					<p>"I don't know why Justin Trudeau's not interested in Indigenous victims of crime," Poilievre said.</p>
+					<p>A Department of Justice official said in a briefing Tuesday that the section of the new bill requiring that courts take into consideration past violent criminal history and community safety was brought in partly because of demands from remote and northern communities during consultations.</p>
+				</div>
+				<ul class="article__list">
+					<li><a href="#" class="link">Violent crime on bail up in Ontario, stakeholders agree system is broken, but not on how to fix it</a></li>
+					<li><a href="#" class="link">Liberals put forward new amendments to gun legislation following initial backlash</a></li>
+				</ul>
+				<div class="article__text">
+					<p>The Canadian Police Association (CPA) welcomed the proposed changes.</p>
+					<p>"Front-line law enforcement personnel have been asking the government to take concrete steps to address the small number of repeat violent offenders who commit a disproportionate number of offences that put the safety of our communities at risk," Tom Stamatakis, CPA president,
+						<a href="#" class="link">said in a statement</a>.
+					</p>
+					<p>"We appreciate that Minister Lametti and Minister Mendicino have worked collaboratively with stakeholders and introduced this common-sense legislation that responds to the concerns that our members have raised."</p>
+					<p>Ontario Attorney General Doug Downey also praised the bill.</p>
+					<p>"Through today's Bill (C-48), the federal government is tabling overdue bail reform and delivering on key asks made by our provincial government," Downey
+						<a href="#" class="link">said in a tweet</a>.
+					</p>
+					<p>"I want to personally thank Minister Lametti for his partnership and movement on listening to the calls from the people of this province, and taking direct action to ensure violent and repeat offenders stay behind bars."</p>
+				</div>
+				<p class="article__source">With files from The Canadian Press</p>
+				<ul class="article__links">
+					<li><a href="#" class="link">CBC's Journalistic Standards and Practices</a></li>
+					<li><a href="#" class="link">About CBC News</a></li>
+					<li><a href="#" class="link-small">Corrections and clarifications</a></li>
+					<li><a href="#" class="link-small">Submit a news tip</a></li>
+					<li><a href="#" class="link-small arrow">Report error</a></li>
+				</ul>
+				<h3 class="article__subtitle border-bottom">RELATED STORIES</h3>
+				<ul class="article__list">
+					<li><a href="#" class="link">Justice minister expected to introduce bail reforms this week</a></li>
+					<li><a href="#" class="link">Violent crime on bail up in Ontario, stakeholders agree system is broken, but not on how to fix it</a></li>
+				</ul>
+			</article>
+
+			<section class="comments">
+				<h2 class="comments__title">Facebook Comments Plugin</h2>
+				<form data-ajax action="#" method="post" class="comments__form">
+					<div class="comments__header">
+						<p class="comments__counter">21 Comments</p>
+						<label for="comments-sorting" class="comments__sorting-label">Sort by</label>
+						<div class="comments__select">
+							Newest
+							<svg viewBox="0 0 24 24" fill="#fbfbfb" xmlns="http://www.w3.org/2000/svg">
+								<path d="M12.29 20.69a.78.78 0 0 0 .24-.16l4-4a.75.75 0 0 0-1.06-1.06l-2.72 2.72V5.81l2.72 2.72a.75.75 0 0 0 1.06-1.06l-4-4a.781.781 0 0 0-.53-.22.78.78 0 0 0-.53.22l-4 4a.75.75 0 0 0 1.06 1.06l2.72-2.72v12.38l-2.72-2.72a.75.75 0 0 0-1.06 1.06l4 4a.779.779 0 0 0 .53.22c.1 0 .198-.02.29-.06z" fill="#000" />
+							</svg>
+						</div>
+					</div>
+					<textarea data-required placeholder="Add a comment..." class="comments__textarea" name="comments-textarea" cols="30" rows="1"></textarea>
+					<button type="submit" class="comments__submit">Send comment</button>
+				</form>
+				<ul class="comments__comments">
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+						<ul class="comments__comments comments__comments_sub">
+							<li class="comments__comment">
+								<div class="comments__comment-wrapper">
+									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+									<div class="comments__comment-content">
+										<div class="comments__name">Lorem ipsum1.</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+										<div class="comments__actions">
+											<button class="comments__like" type="button">Like</button>
+											<button class="comments__reply" type="button">Reply</button>
+											<div class="comments__like-counter">
+												<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+													<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+													<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+												</svg>
+												12
+											</div>
+											<div class="comments__time">12 h</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="comments__comment">
+								<div class="comments__comment-wrapper">
+									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+									<div class="comments__comment-content">
+										<div class="comments__name">Lorem ipsum1.</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+										<div class="comments__actions">
+											<button class="comments__like" type="button">Like</button>
+											<button class="comments__reply" type="button">Reply</button>
+											<div class="comments__like-counter">
+												<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+													<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+													<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+												</svg>
+												12
+											</div>
+											<div class="comments__time">12 h</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="comments__comment">
+								<div class="comments__comment-wrapper">
+									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+									<div class="comments__comment-content">
+										<div class="comments__name">Lorem ipsum1.</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+										<div class="comments__actions">
+											<button class="comments__like" type="button">Like</button>
+											<button class="comments__reply" type="button">Reply</button>
+											<div class="comments__like-counter">
+												<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+													<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+													<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+												</svg>
+												12
+											</div>
+											<div class="comments__time">12 h</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="comments__comment">
+								<div class="comments__comment-wrapper">
+									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+									<div class="comments__comment-content">
+										<div class="comments__name">Lorem ipsum1.</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+										<div class="comments__actions">
+											<button class="comments__like" type="button">Like</button>
+											<button class="comments__reply" type="button">Reply</button>
+											<div class="comments__like-counter">
+												<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+													<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+													<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+												</svg>
+												12
+											</div>
+											<div class="comments__time">12 h</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="comments__comment">
+								<div class="comments__comment-wrapper">
+									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+									<div class="comments__comment-content">
+										<div class="comments__name">Lorem ipsum1.</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+										<div class="comments__actions">
+											<button class="comments__like" type="button">Like</button>
+											<button class="comments__reply" type="button">Reply</button>
+											<div class="comments__like-counter">
+												<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+													<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+													<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+												</svg>
+												12
+											</div>
+											<div class="comments__time">12 h</div>
+										</div>
+									</div>
+								</div>
+							</li>
+							<li class="comments__comment">
+								<div class="comments__comment-wrapper">
+									<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+									<div class="comments__comment-content">
+										<div class="comments__name">Lorem ipsum1.</div>
+										<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+										<div class="comments__actions">
+											<button class="comments__like" type="button">Like</button>
+											<button class="comments__reply" type="button">Reply</button>
+											<div class="comments__like-counter">
+												<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+													<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+													<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+												</svg>
+												12
+											</div>
+											<div class="comments__time">12 h</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</li>
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+					</li>
+					<li class="comments__comment">
+						<div class="comments__comment-wrapper">
+							<picture><source srcset="img/avatar.webp" type="image/webp"><img src="img/avatar.jpg" alt="Avatar image" class="comments__avatar"></picture>
+							<div class="comments__comment-content">
+								<div class="comments__name">Lorem ipsum1.</div>
+								<p class="comments__text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto? Lorem ipsum dolor sit amet, consectetur adipisicing elit. Enim modi ea neque sapiente velit iusto?</p>
+								<div class="comments__actions">
+									<button class="comments__like" type="button">Like</button>
+									<button class="comments__reply" type="button">Reply</button>
+									<div class="comments__like-counter">
+										<svg viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+											<path d="M192 938.7H87.9c-48.4 0-87.9-39.5-87.9-88V386.6c0-48.5 39.5-87.9 87.9-87.9h125.4c11.6 0 22.7 4.7 30.8 13.1 8 8.4 12.3 19.6 11.9 31.2l-21.3 554.7c-.9 22.8-19.8 41-42.7 41zM87.9 384c-1.4 0-2.6 1.2-2.6 2.6v464.1c0 1.4 1.2 2.6 2.6 2.6h63L169 384H87.9z" fill="#5F6379" />
+											<path d="M810.4 938.7H275.7l24.6-640H418l72-201.8C510.7 38.9 566 0 627.5 0c42.4 0 82.6 18.4 110.3 50.4S778 124.8 772 166.7l-18.9 132h142.6c70.7 0 128.2 57.5 128.2 128.2l-1 9.3-84.4 379.4c-2.6 68.3-59.1 123.1-128.1 123.1zm-446.1-85.4h446.1c23.6 0 42.9-19.2 42.9-42.9l1-9.3L938.5 423c-2-21.8-20.4-39-42.7-39h-241l32.8-229.4c2.5-17.7-2.5-34.8-14.2-48.3s-28-20.9-45.9-20.9c-25.6 0-48.5 16.2-57.1 40.3L478.1 384h-95.7l-18.1 469.3z" fill="#3688FF" />
+										</svg>
+										12
+									</div>
+									<div class="comments__time">12 h</div>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<button class="comments__showmore" type="button">Load 10 More comments</button>
+			</section>
+
+			<section class="form">
+				<h2 class="form__title">Contact Us</h2>
+				<p class="form__text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum tenetur explicabo quia nisi nobis deserunt sint at a fugit temporibus, asperiores enim tempore facilis. Et.</p>
+				<form data-ajax action="send.php" method="post" class="form__form">
+					<input autocomplete="off" type="text" name="form[name]" placeholder="Name" class="form__input">
+					<input autocomplete="off" type="text" name="form[last-name]" placeholder="Last name" class="form__input">
+					<input autocomplete="off" type="text" name="form[email]" placeholder="Email" class="form__input">
+					<div class="form__phone-wrapper">
+						<span>+17</span>
+						<input data-required data-phone-pattern autocomplete="off" type="text" name="form[phone]" placeholder="Phone" class="form__input">
+						<input hidden type="text" name="form[hidden-phone]">
+					</div>
+					<button type="submit" class="form__btn">Send</button>
+					<div hidden class="form__spinner"><img src="img/spinner.gif" alt="sending"></div>
+				</form>
+			</section>
+
+		</main>
+		<footer class="footer">
+			<div class="footer__container">
+				<a href="index.html" class="footer__logo">
+					<img src="img/logo-footer.svg" alt="Logo">
+				</a>
+				<p class="footer__copyright">©2023 CBC/Radio-Canada. All rights reserved.</p>
+				<a href="#" class="footer__link">Visitez Radio-Canada.ca</a>
+			</div>
+		</footer>
+	</div>
+	<script src="js/app.min.js?_v=20230519013834"></script>
+</body>
+
+</html>
